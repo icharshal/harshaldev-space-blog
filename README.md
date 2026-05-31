@@ -11,45 +11,7 @@ This workspace contains both the **Astro-based frontend blog codebase** and the 
 
 ---
 
-## ⚙️ Setup & Configuration Guide
-
-### 1. Hostinger DNS Mapping
-
-To link your custom domain `harshaldev.space` to GitHub Pages, the following DNS records were manually configured on Hostinger:
-
-* **A Records** (Points apex domain `@` to GitHub Pages servers):
-  * `185.199.108.153`
-  * `185.199.109.153`
-  * `185.199.110.153`
-  * `185.199.111.153`
-* **CNAME Record** (Points sub-domain `www` to your GitHub Pages endpoint):
-  * Name: `www`
-  * Target: `icharshal.github.io`
-
-*Note: DNS changes can take up to 24 hours to propagate globally.*
-
-### 2. GitHub Pages Settings
-1. Navigate to **Settings > Pages** in your GitHub repository.
-2. Select **GitHub Actions** as the build source.
-3. Once the Let's Encrypt SSL certificate is provisioned (5-15 mins), check **Enforce HTTPS**.
-
-### 3. CI/CD GitHub Actions Pipeline
-The deployment pipeline is located at `.github/workflows/deploy.yml` and performs the following automation on push to `main` branch:
-* Checks out repository files.
-* Configures Node.js v22 runtime.
-* Automatically enables Pages configuration with `enablement: true`.
-* Installs dependencies via `npm ci` under `blog-site/`.
-* Compiles the static site to `dist/` using `npm run build`.
-* Deploys the static files directly to GitHub Pages.
-
-### 4. Local Build & Preview
-To build and test the blog locally:
-```bash
-cd blog-site
-npm install
-npm run dev      # Local server at localhost:4321
-npm run build    # Compiles site to ./dist/
-```
+*Note: For technical details regarding DNS setup, CI/CD pipelines, or local dev commands, please refer to the git-ignored local file `setup.md`.*
 
 ---
 

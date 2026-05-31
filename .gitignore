@@ -17,3 +17,6 @@ Thumbs.db
 
 # hostinger_dns setup
 hostinger_dns.py
+
+# Documentation
+setup.md
