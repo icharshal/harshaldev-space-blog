@@ -2,7 +2,7 @@
 title: "How to Build a Custom YouTube Transcript Fetcher and Video Downloader in Python"
 description: "A complete step-by-step engineering guide to programmatically fetching subtitles, handling auto-generated caption fallbacks, and downloading media using yt-dlp—no YouTube API keys required."
 pubDate: "May 31 2026"
-heroImage: "/blog-placeholder-1.jpg"
+heroImage: "../../assets/blog-placeholder-1.jpg"
 ---
 
 # How to Build a Custom YouTube Transcript Fetcher and Video Downloader in Python
