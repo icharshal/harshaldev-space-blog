@@ -2,7 +2,7 @@
 title: "Designing Multi-Agent Handoff Systems Using Markdown Blueprints"
 description: "A deep dive into setting up supervisor-worker collaboration patterns using structured agent.md configurations and handoff skill guides."
 pubDate: "Jun 02 2026"
-heroImage: "../../assets/blog-placeholder-3.jpg"
+heroImage: "../../assets/multi-agent-net.png"
 ---
 
 Collaborative multi-agent architectures are the standard for solving complex, multi-layered software engineering tasks. Instead of overloading a single agent prompt with hundreds of lines of general instructions, we can split responsibilities among specialized agents.

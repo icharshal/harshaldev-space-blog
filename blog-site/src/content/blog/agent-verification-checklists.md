@@ -2,7 +2,7 @@
 title: "Designing Executable Verification Checklists in Agent Skills"
 description: "How to eliminate deployment bugs by embedding self-verifying test commands and assertion steps directly within local agent skill definitions."
 pubDate: "Jun 03 2026"
-heroImage: "../../assets/blog-placeholder-4.jpg"
+heroImage: "../../assets/code-validation.png"
 ---
 
 One of the biggest issues with AI coding assistants is their tendency to announce task completion before validating that the codebase compiles and passes tests. They declare victory prematurely, leaving the developer to debug import errors or syntax mistakes.

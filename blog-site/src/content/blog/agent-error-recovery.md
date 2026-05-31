@@ -2,7 +2,7 @@
 title: "Building Systematic Error Recovery Blueprints in AI Agent Skills"
 description: "A guide to defining systematic troubleshooting routines, exception handlers, and auto-recovery rules within local agent configuration profiles."
 pubDate: "Jun 06 2026"
-heroImage: "../../assets/blog-placeholder-2.jpg"
+heroImage: "../../assets/error-recovery.png"
 ---
 
 When a command fails during an automated run (for example, a linting check fails or a docker container doesn't boot), an untrained coding agent might panic, try random edits, or give up entirely. 
