@@ -1,8 +1,15 @@
 ---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <!doctype html>
@@ -13,25 +20,39 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<div class="hero-section" style="padding: 4em 0 2em 0; text-align: center;">
-				<h1 style="font-size: 3.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; margin-bottom: 0.3em;">
-					Harshal Nikure
+			<div style="margin-bottom: 3.5em; text-align: center; padding: 2em 0 1em 0;">
+				<h1 style="font-size: 3.5rem; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; margin-bottom: 0.2em;">
+					Harshal Dev
 				</h1>
-				<p style="font-size: 1.35rem; color: var(--text-title); font-weight: 500; margin-bottom: 1.5em; font-family: var(--font-heading);">
-					Cloud & AI Engineer | Specializing in DevOps, Kubernetes, and Generative AI
+				<p style="font-size: 1.25rem; color: var(--text-title); font-weight: 500; font-family: var(--font-heading); margin-bottom: 0.5em;">
+					Cloud & AI Engineering Blog
 				</p>
-				<p style="max-width: 600px; margin: 0 auto 2.5em auto; opacity: 0.8; font-size: 1.1rem; line-height: 1.7;">
-					Welcome to my technical blog. Here, I share in-depth tutorials, architectural reviews, and automation guides focused on building resilient systems and cognitive AI agents.
+				<p style="max-width: 600px; margin: 0 auto; opacity: 0.8; font-size: 1.05rem;">
+					Deep dives, production architectures, and automation guides focused on building resilient systems and cognitive AI agents.
 				</p>
-				<div style="display: flex; gap: 1em; justify-content: center;">
-					<a href="/blog" style="background: var(--accent-gradient); color: #fff; padding: 0.8em 1.8em; border-radius: 8px; font-weight: 600; font-family: var(--font-heading); box-shadow: var(--box-shadow); transition: transform 0.2s ease;">
-						Read the Blog
-					</a>
-					<a href="/about" style="border: 1px solid var(--border-color); color: var(--text-title); padding: 0.8em 1.8em; border-radius: 8px; font-weight: 600; font-family: var(--font-heading); background: rgba(255, 255, 255, 0.02); transition: all 0.2s ease;">
-						About Me
-					</a>
-				</div>
 			</div>
+			<section>
+				<ul class="post-list">
+					{
+						posts.map((post) => (
+							<li class="post-card">
+								<a href={`/blog/${post.id}/`} style="color: inherit; text-decoration: none;">
+									{post.data.heroImage && (
+										<Image width={720} height={360} src={post.data.heroImage} alt={post.data.title} />
+									)}
+									<div class="post-card-content">
+										<div class="post-card-date">
+											<FormattedDate date={post.data.pubDate} />
+										</div>
+										<h2 class="post-card-title">{post.data.title}</h2>
+										<p class="post-card-desc">{post.data.description}</p>
+									</div>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
 		</main>
 		<Footer />
 	</body>

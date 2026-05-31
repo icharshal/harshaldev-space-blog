@@ -22,13 +22,40 @@ An agent configuration system is composed of two primary elements:
 
 Here is how the hierarchy works inside a repository:
 
-```
+```text
 my-project/
 ├── .agents/
 │   ├── agent.md                 # Core agent persona definition
 │   └── skills/
 │       ├── blog-writing.md      # Skill: Writing structured posts
 │       └── api-integration.md   # Skill: Designing RESTful routes
+```
+
+### 🔄 Agent System Execution Flow
+
+When triggered, the assistant reads the system context and aligns its execution logic as follows:
+
+```text
++-----------------------+
+|  User Command/Task    |
++-----------+-----------+
+            |
+            v
++-----------+-----------+
+|  Read:                |
+|  - .agents/agent.md   | ===> Load core persona & guidelines
+|  - .agents/skills/*   | ===> Load task-specific skills & rules
++-----------+-----------+
+            |
+            v
++-----------+-----------+
+|  Formulate Solution   | ===> Drafts architecture & write files
++-----------+-----------+
+            |
+            v
++-----------+-----------+
+|  Run Verification     | ===> Runs tests to confirm compliance
++-----------------------+
 ```
 
 ---
