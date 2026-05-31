@@ -1,4 +1,6 @@
-# Astro Starter Kit: Blog
+# Harshal Dev - Technical Blog
+
+Live site: [https://harshaldev.space](https://harshaldev.space)
 
 ```sh
 npm create astro@latest -- --template blog
