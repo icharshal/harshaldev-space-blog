@@ -5,11 +5,6 @@ pubDate: "Jun 01 2026"
 heroImage: "../../assets/blog-placeholder-2.jpg"
 ---
 
-# How to Build and Configure Custom Agent Skills for AI Coding Assistants
-
-### A comprehensive developer's guide to defining custom AI agent personas, task workflows, and repeatable skills using version-controlled markdown configurations.
-
----
 
 As AI coding assistants become more integrated into our daily development loops, standard prompts are no longer enough. To get consistent, high-quality output on complex tasks, we need to structure our agent interactions. 
 
