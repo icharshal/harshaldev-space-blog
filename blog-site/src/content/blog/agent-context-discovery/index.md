@@ -2,7 +2,7 @@
 title: "Optimizing AI Agent Context Windows via Structured Discovery Skills"
 description: "How to design context discovery instructions to help local code agents navigate repositories, find config parameters, and minimize token costs."
 pubDate: "Jun 05 2026"
-heroImage: "../../assets/context-discovery.png"
+heroImage: "./context-discovery.png"
 ---
 
 Large Language Models now support massive context windows, but sending an entire repository to an LLM for every query is slow and expensive. Moreover, cluttering the context window with irrelevant files can lead to the model "losing" key details in the middle of the prompt.

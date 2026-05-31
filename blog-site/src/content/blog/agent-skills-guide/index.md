@@ -2,7 +2,7 @@
 title: "How to Build and Configure Custom Agent Skills for AI Coding Assistants"
 description: "A comprehensive developer's guide to defining custom AI agent personas, task workflows, and repeatable skills using version-controlled markdown configurations."
 pubDate: "Jun 01 2026"
-heroImage: "../../assets/blog-placeholder-2.jpg"
+heroImage: "./agent-skills.png"
 ---
 
 

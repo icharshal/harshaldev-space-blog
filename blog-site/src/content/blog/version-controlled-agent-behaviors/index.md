@@ -2,7 +2,7 @@
 title: "Version Controlling AI Agent Behaviors in Team Workflows"
 description: "Why you should store agent instructions inside Git, tracking behavior changes over commit history, and standardizing prompt templates for team alignment."
 pubDate: "Jun 04 2026"
-heroImage: "../../assets/git-commit.png"
+heroImage: "./git-commit.png"
 ---
 
 When multiple developers on a team use different AI assistants (such as Claude Code, GitHub Copilot, or Cursor), the code generated can quickly drift. One developer's assistant might favor functional programming, while another's prefers object-oriented design, leading to an inconsistent codebase.
