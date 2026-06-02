@@ -1,7 +1,7 @@
 ---
 title: "Designing Executable Verification Checklists in Agent Skills"
 description: "How to eliminate deployment bugs by embedding self-verifying test commands and assertion steps directly within local agent skill definitions."
-pubDate: "Jun 03 2026"
+pubDate: "May 31 2026"
 heroImage: "./code-validation.png"
 ---
 

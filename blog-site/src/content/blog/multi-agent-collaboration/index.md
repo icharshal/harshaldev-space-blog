@@ -1,7 +1,7 @@
 ---
 title: "Designing Multi-Agent Handoff Systems Using Markdown Blueprints"
 description: "A deep dive into setting up supervisor-worker collaboration patterns using structured agent.md configurations and handoff skill guides."
-pubDate: "Jun 02 2026"
+pubDate: "Jun 01 2026"
 heroImage: "./multi-agent-net.png"
 ---
 

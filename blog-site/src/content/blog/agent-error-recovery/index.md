@@ -1,7 +1,7 @@
 ---
 title: "Building Systematic Error Recovery Blueprints in AI Agent Skills"
 description: "A guide to defining systematic troubleshooting routines, exception handlers, and auto-recovery rules within local agent configuration profiles."
-pubDate: "Jun 06 2026"
+pubDate: "May 28 2026"
 heroImage: "./error-recovery.png"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Optimizing AI Agent Context Windows via Structured Discovery Skills"
 description: "How to design context discovery instructions to help local code agents navigate repositories, find config parameters, and minimize token costs."
-pubDate: "Jun 05 2026"
+pubDate: "May 29 2026"
 heroImage: "./context-discovery.png"
 ---
 

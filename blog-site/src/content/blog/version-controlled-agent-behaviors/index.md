@@ -1,7 +1,7 @@
 ---
 title: "Version Controlling AI Agent Behaviors in Team Workflows"
 description: "Why you should store agent instructions inside Git, tracking behavior changes over commit history, and standardizing prompt templates for team alignment."
-pubDate: "Jun 04 2026"
+pubDate: "May 30 2026"
 heroImage: "./git-commit.png"
 ---
 

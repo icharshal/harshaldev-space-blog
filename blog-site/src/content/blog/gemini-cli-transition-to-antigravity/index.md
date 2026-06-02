@@ -1,7 +1,7 @@
 ---
 title: "The Leap to Autonomy: Transitioning from Gemini CLI to Antigravity 2.0"
 description: "A deep dive into the transition from standard Gemini CLI to the agentic capabilities of Antigravity 2.0, exploring core features, autonomous workflows, and the future of AI pair programming."
-pubDate: "Jun 01 2026"
+pubDate: "May 26 2026"
 heroImage: "./hero.png"
 ---
 
