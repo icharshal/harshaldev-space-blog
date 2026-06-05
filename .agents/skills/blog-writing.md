@@ -1,6 +1,12 @@
-# Skill: Technical Blog Writing (Medium-Style)
+---
+name: blog-writing
+description: Rules and templates for writing Medium-style Astro technical blogs. Use when drafting new blog posts.
+---
+
+# Technical Blog Writing Skill
 
 This skill governs the structure, tone, code inclusion, and asset handling for top-tier technical articles.
+
 
 ## Article Structure
 
