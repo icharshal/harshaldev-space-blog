@@ -1,4 +1,4 @@
-# Harshal Dev - Technical Blog
+# Harshal-Dev - Technical Blog
 
 Live site: [https://harshaldev.space](https://harshaldev.space)
 
